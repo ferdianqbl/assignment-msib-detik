@@ -5,6 +5,13 @@ $(document).ready(function () {
     $(".navbar-toggler--nav").toggleClass("toggler-active");
   });
 
+  // set nav bg style on scroll
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 50)
+      $(".navbar").css("background-color", "#232340");
+    else $(".navbar").css("background-color", "transparent");
+  });
+
   // CAROUSEL
   $(".owl-carousel").owlCarousel({
     loop: true,
