@@ -1,5 +1,113 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+// === VARIABLES ===
+$off-white: #f5f5f5;
+$light-blue: #5468e7;
+$dark-blue: #232340;
+$light-blue-secondary: #7676b2;
+
 body {
   font-family: "Lexend Deca", sans-serif;
+}
+
+// === COMPONENTS ===
+
+// === NAVBAR ===
+nav.navbar.navbar {
+  transition: all 0.3s ease-in-out;
+
+  @media (max-width: 992px) {
+    background: $dark-blue;
+  }
+
+  ul {
+    li {
+      a {
+        text-decoration: underline;
+        color: $off-white;
+        font-weight: 500;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          color: #eeeeee;
+        }
+      }
+    }
+  }
+
+  .nav-btn {
+    border-radius: 4px;
+    background: rgba(84, 104, 231, 0.5);
+    border: none;
+    padding: 10px 20px;
+    color: $off-white;
+    font-weight: 400;
+    font-size: 1.05rem;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #7676b2;
+    }
+  }
+
+  .navbar-toggler {
+    border: none;
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+  .navbar-toggler--nav,
+  .navbar-toggler-icon {
+    transition: all 0.5s ease-in-out;
+  }
+
+  .navbar-toggler-icon {
+    background: none;
+    height: 2px;
+    width: 28px;
+    display: block;
+    border-radius: 9999px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .navbar-toggler-icon:not(:last-child) {
+    margin-bottom: 7px;
+  }
+
+  .navbar-toggler--nav.toggler-active {
+    transition-delay: 0.8s;
+    transform: rotate(45deg);
+  }
+
+  .navbar-toggler--nav.toggler-active > span:nth-child(2) {
+    width: 0;
+  }
+
+  .navbar-toggler--nav.toggler-active > span:nth-child(1),
+  .navbar-toggler--nav.toggler-active > span:nth-child(3) {
+    transition-delay: 0.5s;
+  }
+
+  .navbar-toggler--nav.toggler-active > span:nth-child(1) {
+    transform: translateY(9px);
+  }
+
+  .navbar-toggler--nav.toggler-active > span:nth-child(3) {
+    transform: translateY(-9px) rotate(90deg);
+  }
+}
+
+// ===HOME===
+.home-hero {
+  background-image: url("../images/home-hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
