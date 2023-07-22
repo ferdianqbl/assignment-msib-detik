@@ -3,6 +3,58 @@ body {
   font-family: "Lexend Deca", sans-serif;
 }
 
+.section-heading {
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+  color: #232340;
+}
+@media (max-width: 576px) {
+  .section-heading {
+    font-size: 2.125rem;
+    line-height: 42px;
+  }
+}
+
+.section-text {
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  color: rgba(35, 35, 64, 0.9);
+}
+@media (max-width: 576px) {
+  .section-text {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+}
+
+.button-primary {
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  padding: 10px 30px;
+  border-radius: 4px;
+  background-color: #5468e7;
+  transition: all 0.3s ease-in-out;
+  color: #f5f5f5;
+  text-align: center;
+}
+.button-primary:hover, .button-primary:active, .button-primary:focus {
+  background-color: #7676b2;
+  color: #f5f5f5;
+}
+@media (max-width: 576px) {
+  .button-primary {
+    font-size: 1rem;
+    line-height: 24px;
+    width: 100%;
+  }
+}
+
 nav.navbar.navbar {
   transition: all 0.3s ease-in-out;
 }
@@ -83,4 +135,47 @@ nav.navbar.navbar .navbar-toggler--nav.toggler-active > span:nth-child(3) {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.home-hero .input-email {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+  border: none;
+  padding: 10px 1rem;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0.14px;
+  color: #7676b2;
+  background: #f5f5f5;
+}
+.home-hero .input-email input {
+  border: none;
+  background: none;
+  color: #7676b2;
+}
+.home-hero .input-email input:focus {
+  outline: none;
+  box-shadow: none;
+}
+.home-hero .input-email i {
+  color: #7676b2;
+  font-size: 1.5rem;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+@media (max-width: 992px) {
+  .home-hero .input-email {
+    width: auto;
+  }
+}
+@media (max-width: 576px) {
+  .home-hero .input-email {
+    font-size: 1rem;
+    line-height: 24px;
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -11,6 +11,57 @@ body {
 }
 
 // === COMPONENTS ===
+.section-heading {
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+  color: $dark-blue;
+
+  @media (max-width: 576px) {
+    font-size: 2.125rem;
+    line-height: 42px;
+  }
+}
+
+.section-text {
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  color: rgba(35, 35, 64, 0.9);
+
+  @media (max-width: 576px) {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+}
+
+.button-primary {
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  padding: 10px 30px;
+  border-radius: 4px;
+  background-color: $light-blue;
+  transition: all 0.3s ease-in-out;
+  color: $off-white;
+  text-align: center;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $light-blue-secondary;
+    color: $off-white;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 1rem;
+    line-height: 24px;
+    width: 100%;
+  }
+}
 
 // === NAVBAR ===
 nav.navbar.navbar {
@@ -110,4 +161,49 @@ nav.navbar.navbar {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  .input-email {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    border: none;
+    padding: 10px 1rem;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 0.14px;
+    color: $light-blue-secondary;
+    background: $off-white;
+
+    input {
+      border: none;
+      background: none;
+      color: $light-blue-secondary;
+
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+
+    i {
+      color: $light-blue-secondary;
+      font-size: 1.5rem;
+      display: inline-block;
+      padding: 0;
+      margin: 0;
+    }
+
+    @media (max-width: 992px) {
+      width: auto;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 1rem;
+      line-height: 24px;
+      width: 100%;
+    }
+  }
 }
