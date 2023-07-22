@@ -1,0 +1,443 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+$black: #2d2d2d;
+$black-normal: #2e2f33;
+$dark-grey: #575757;
+$light-grey: #929292;
+$dark-blue: #0f172a;
+$green-primary: #479e10;
+
+// Components
+.button-primary {
+    text-decoration: none;
+    background-color: $green-primary;
+    border: none;
+    color: #fff !important;
+    padding: 10px 20px !important;
+    border-radius: 100px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        background-color: #2e630a;
+    }
+}
+
+.button-link {
+    color: $green-primary !important;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        color: #2e630a;
+    }
+}
+
+.content-nav-link {
+    text-decoration: none;
+    background-color: #eeeeee;
+    border: none;
+    color: #747474 !important;
+    padding: 10px 20px !important;
+    border-radius: 5px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+        background-color: #e0e0e0;
+    }
+
+    &.active {
+        background-color: #c5ecaf;
+        border: none;
+        font-weight: 500;
+        color: #35770c !important;
+    }
+}
+
+.hero-heading {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: $dark-blue;
+    margin-bottom: 1rem;
+
+    span {
+        color: $green-primary;
+    }
+
+    @media (max-width: 992px) {
+        font-size: 1.5rem;
+    }
+}
+
+.banner-heading {
+    font-size: 4rem;
+    font-weight: 600;
+    color: $dark-blue;
+    margin-bottom: 1rem;
+
+    span {
+        color: $green-primary;
+    }
+
+    @media (max-width: 992px) {
+        font-size: 2.75rem;
+    }
+}
+
+.text-dark-grey {
+    color: $dark-grey;
+}
+
+.text-black {
+    color: $black;
+}
+
+.pt-8 {
+    padding-top: 8rem;
+}
+
+.pb-8 {
+    padding-bottom: 8rem;
+}
+
+.section-heading {
+    font-size: 3rem;
+    color: $black-normal;
+    font-weight: 600;
+    @media (max-width: 992px) {
+        font-size: 2rem;
+    }
+}
+
+.product-card {
+    width: 100%;
+    .product-img {
+        margin-bottom: 1.25rem;
+        width: 100%;
+        max-height: 200px;
+        img {
+            margin: auto;
+            text-align: center;
+            display: block;
+            max-width: 200px;
+            object-fit: contain;
+            aspect-ratio: 1/1;
+            object-position: center;
+        }
+    }
+
+    .product-card-body {
+        .title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: $black;
+        }
+        .text {
+            font-size: 1rem;
+            color: $light-grey;
+        }
+    }
+}
+
+.promo-card {
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    background: #fff;
+    .promo-img {
+        padding: 1rem 1rem 0 1rem;
+        // margin-bottom: 2rem;
+        width: 100%;
+        // max-height: 200px;
+        img {
+            border-radius: 1rem;
+            display: block;
+            width: 100%;
+            // height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .promo-card-body {
+        padding: 1rem;
+        .title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: $black;
+        }
+
+        .text {
+            font-size: 1rem;
+            color: $light-grey;
+        }
+
+        .date {
+            font-size: 1rem;
+            color: #858585;
+        }
+    }
+
+    @media (max-width: 576px) {
+        max-width: 20rem;
+        margin: auto;
+    }
+}
+
+.blog-card {
+    width: 100%;
+    overflow: hidden;
+    .blog-img {
+        width: 100%;
+        img {
+            border-radius: 12px;
+            display: block;
+            width: 100%;
+            // height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .blog-card-body {
+        margin-top: 1rem;
+        .title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: $black;
+        }
+
+        .text {
+            font-size: 1rem;
+            color: $light-grey;
+        }
+
+        .date {
+            font-size: 1rem;
+            color: #858585;
+        }
+
+        .author {
+            font-size: 1rem;
+            color: $black;
+
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+
+    @media (max-width: 576px) {
+        max-width: 20rem;
+        margin: auto;
+    }
+}
+
+.review-card {
+    .review-card-body {
+        padding: 1rem;
+        border-radius: 1rem;
+        background-color: #fff;
+        .title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: $black;
+        }
+
+        .text {
+            font-size: 1rem;
+            color: $light-grey;
+        }
+    }
+
+    .review-card-profile {
+        img {
+            max-width: 50px;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            object-position: center;
+        }
+        .name {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #2e2f33;
+        }
+
+        .job {
+            font-size: 1rem;
+            color: #929292;
+        }
+    }
+}
+
+// ========Navbar
+nav.navbar#navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #eaeaeb;
+    ul {
+        li {
+            a.nav-link {
+                color: #747474;
+                font-weight: 400;
+                transition: all 0.3s ease-in-out;
+            }
+            a.nav-link:hover {
+                color: #35770c;
+            }
+            a.nav-link.active {
+                font-weight: bold;
+                color: #35770c;
+            }
+        }
+    }
+}
+
+img.product-hero-img {
+    position: absolute;
+    top: -15rem;
+    right: -20rem;
+    max-width: 70vw;
+    object-fit: cover;
+    object-position: center;
+
+    @media (max-width: 992px) {
+        max-width: 80vw;
+        top: -13rem;
+        right: -15rem;
+    }
+
+    @media (max-width: 768px) {
+        max-width: 80vw;
+        top: -10rem;
+        right: -10rem;
+    }
+}
+
+.blog-banner-card {
+    .title {
+        font-size: 2rem !important;
+        font-weight: 700 !important;
+
+        @media (max-width: 576px) {
+            font-size: 1.25rem !important;
+        }
+    }
+
+    .date {
+        font-size: 1.25rem !important;
+        color: $black-normal !important;
+
+        span {
+            font-weight: bold !important;
+        }
+
+        @media (max-width: 576px) {
+            font-size: 1rem !important;
+        }
+    }
+
+    .text {
+        font-size: 1.05rem !important;
+        color: #858585 !important;
+        @media (max-width: 576px) {
+            font-size: 0.8rem !important;
+        }
+    }
+}
+
+form.form#form {
+    label {
+        font-weight: 500;
+        color: $black;
+    }
+
+    input,
+    textarea {
+        font-size: 0.9rem;
+    }
+}
+
+// OWL CAROUSEL
+.owl-dot {
+    span {
+        background-color: #c2c2c2 !important;
+    }
+}
+.owl-dot.active {
+    span {
+        background-color: #479e10 !important;
+    }
+}
+
+.owl-next,
+.owl-prev {
+    position: absolute;
+    background: #fff !important;
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 50% !important;
+    transition: all 0.3s ease-in-out;
+    color: #c2c2c2 !important;
+    font-weight: 600 !important;
+    &:hover {
+        background: #479e10 !important;
+        color: #fff !important;
+    }
+}
+
+.owl-prev {
+    left: -40px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+}
+
+.owl-next {
+    right: -40px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+}
+
+// Pagination
+.pagination {
+    button {
+        text-decoration: none;
+        color: #667085;
+        font-weight: 400;
+        transition: all 0.3s ease-in-out;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        border: none;
+        background-color: #fff;
+
+        &:hover {
+            color: #35770c;
+            background-color: #edf5e7;
+        }
+    }
+    .number-pagination {
+        a {
+            text-decoration: none;
+            color: #667085;
+            font-weight: 400;
+            transition: all 0.3s ease-in-out;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+        a:hover {
+            color: #35770c;
+            background-color: #edf5e7;
+        }
+        a.active {
+            font-weight: 500;
+            color: #479e10;
+            background-color: #edf5e7;
+        }
+    }
+}
