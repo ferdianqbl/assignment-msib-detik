@@ -85,6 +85,8 @@ body {
 
 nav.navbar#navbar {
   transition: all 0.3s ease-in-out;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 @media (max-width: 992px) {
   nav.navbar#navbar {

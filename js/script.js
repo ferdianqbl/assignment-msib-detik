@@ -6,18 +6,25 @@ $(document).ready(function () {
 
   // set nav bg style on scroll
   $(window).scroll(function () {
-    if ($(window).scrollTop() > 50) {
+    if ($(window).scrollTop() > 50)
       $(".navbar").css("background-color", "#232340");
-      if ($(".navbar-light")) {
-        $(".nav-link").removeClass("nav-link-black");
-        $(".navbar-brand img").attr("src", "images/logo.svg");
-      }
+    else $(".navbar").css("background-color", "transparent");
+
+    if ($(window).scrollTop() > 50) {
+      $(".navbar.navbar-light").css("background-color", "#232340");
+      $(".navbar.navbar-light .nav-link").removeClass("nav-link-black");
+      $(".navbar.navbar-light .navbar-brand img").attr(
+        "src",
+        "images/logo.svg"
+      );
     } else {
-      $(".navbar").css("background-color", "transparent");
-      if ($(".navbar-light")) {
-        $(".nav-link").addClass("nav-link-black");
-        $(".navbar-brand img").attr("src", "images/logo-dark.svg");
-      }
+      $(".navbar.navbar-light").css("background-color", "transparent");
+
+      $(".navbar.navbar-light .nav-link").addClass("nav-link-black");
+      $(".navbar.navbar-light .navbar-brand img").attr(
+        "src",
+        "images/logo-dark.svg"
+      );
     }
   });
 
