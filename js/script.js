@@ -1,15 +1,24 @@
 $(document).ready(function () {
   // Closes responsive menu when a scroll trigger link is clicked
   $(".navbar-toggler").click(function () {
-    // $(".navbar-collapse").collapse("hide");
     $(".navbar-toggler--nav").toggleClass("toggler-active");
   });
 
   // set nav bg style on scroll
   $(window).scroll(function () {
-    if ($(window).scrollTop() > 50)
+    if ($(window).scrollTop() > 50) {
       $(".navbar").css("background-color", "#232340");
-    else $(".navbar").css("background-color", "transparent");
+      if ($(".navbar-light")) {
+        $(".nav-link").removeClass("nav-link-black");
+        $(".navbar-brand img").attr("src", "images/logo.svg");
+      }
+    } else {
+      $(".navbar").css("background-color", "transparent");
+      if ($(".navbar-light")) {
+        $(".nav-link").addClass("nav-link-black");
+        $(".navbar-brand img").attr("src", "images/logo-dark.svg");
+      }
+    }
   });
 
   // CAROUSEL
