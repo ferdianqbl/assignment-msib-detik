@@ -14,8 +14,175 @@
 </head>
 
 <body>
+  <!-- navbar -->
+  <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="home.html">
+        <img src="./images/logo.svg" alt="" class="img-fluid">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="navbar-toggler--nav">
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+        </div>
+      </button>
+      <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-lg-5">
+          <li class="nav-item">
+            <a class="nav-link nav-link-black" href="#">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-black" href="blog_1.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-black" href="#">Support</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-black" href="#">Log In</a>
+          </li>
+        </ul>
 
+        <a class="nav-link nav-btn d-inline-block" href="#">Get Access</a>
+      </div>
+    </div>
+  </nav>
+  <div class="detail-blog" id="detail-blog">
+    <div class="pt-8 pb-8">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-10">
+            <h1 class="section-heading">Data exported by Team Cloud organization administrators contained private files
+            </h1>
+            <div class="detail-blog-author mt-5">
+              <img src="https://source.unsplash.com/random/300×300?person" alt="" class="img-fluid">
+              <p class="text">Jane Cooper</p>
+              <p class="text">July 11, 2022</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="container-lg">
+        <div class="row justify-content-center align-items-center mt-5 p-0">
+          <div class="col-lg-11 p-0 m-0">
+            <img src="./images/detail-blog.png" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-center align-items-center mt-5">
+          <div class="col-lg-10">
+            <p class="section-text">Administrators of Team Cloud organizations can export public data from their
+              organization via the organization settings menu. The exports include all the data that appears in public
+              streams, and can be used to migrate from Team Cloud to self-hosting Team. Note that exporting private data
+              is a separate process that requires contacting Team Support.
+            </p>
+            <p class="section-text">Due to a bug in the public export code, exports of public data contained all
+              uploaded
+              files, even those from private messages and private streams. This may have allowed organization owners or
+              administrators to extract uploaded files that they were not otherwise allowed to access. The content of
+              non-public messages was never included in public exports.
+            </p>
+            <p class="section-text">This bug has existed since the public export feature was implemented in August 2019.
+              We have deleted all existing Team Cloud exports from our servers, and will be making changes to
+              auto-expire
+              all exports after 7 days in the future. This bug was fixed for self-hosted users in the Team Server 5.4
+              release.
+            </p>
+            <p class="section-text">
+              We have notified by email all administrators and users in non-deactivated Team Cloud organizations who may
+              have been impacted by this bug. As many organizations have never exported their data, most Team Cloud
+              users
+              were not affected.
+            </p>
+            <p class="section-text">
+              We would like to thank Antoine Benoist for bringing this issue to our attention.
+            </p>
+
+            <div class="detail-blog-content-author mt-5">
+              <img src="https://source.unsplash.com/random/300×300?person" alt="" class="img-fluid">
+              <div class="detail-blog-content-author-body">
+                <p class="written-by mb-0">written by</p>
+                <p class="title mb-0">Mark Brooklyn</p>
+                <p class="text mb-0">COO at Team. Author of the upcoming book on Team Management and Leadership.</p>
+              </div>
+            </div>
+
+            <hr>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-10">
+            <p class="mb-5 section-text">Join the conversation</p>
+            <div class="detail-blog-comment">
+              <img src="https://source.unsplash.com/random/300×300?person" alt="" class="img-fluid">
+              <textarea name="" id="" cols="30" rows="10" placeholder="comments"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FOOTER -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="row justify-content-center align-items-start">
+        <div class="col-lg-2 mb-5">
+          <img src="./images/logo.svg" alt="" class="img-fluid mb-4">
+          <p class="footer-text">Collaboration platform for mordern team </p>
+        </div>
+        <div class="col-lg-10">
+          <div
+            class="d-flex justify-content-between align-items-start flex-wrap gap-5 gap-md-3 gap-lg-0 flex-column flex-md-row">
+            <div class="d-block d-md-none">
+              <h1 class="footer-heading">Stay up to date</h1>
+              <p class="footer-text">Subscribe to our newseller</p>
+              <div class="input-email">
+                <input class="" placeholder="Email" />
+                <i class="bi bi-arrow-right-short"></i>
+              </div>
+            </div>
+            <div class="">
+              <h1 class="footer-heading">Company</h1>
+              <a href="#" class="nav-link footer-link">Product</a>
+              <a href="#" class="nav-link footer-link">Blog</a>
+              <a href="#" class="nav-link footer-link">Support</a>
+            </div>
+            <div class="">
+              <h1 class="footer-heading">Features</h1>
+              <a href="#" class="nav-link footer-link">Screen Sharing</a>
+              <a href="#" class="nav-link footer-link">iOS & Android Apps</a>
+              <a href="#" class="nav-link footer-link">File Sharing</a>
+              <a href="#" class="nav-link footer-link">User Managment</a>
+            </div>
+            <div class="">
+              <h1 class="footer-heading">Contact Us</h1>
+              <a href="#" class="nav-link footer-link">info@teamapp.com</a>
+              <p class="footer-text mb-0">1-800-200-300</p>
+              <p class="footer-text mb-0">1010 Sunset Blv.
+                Palo Alto, California</p>
+            </div>
+            <div class="d-none d-md-block">
+              <h1 class="footer-heading">Stay up to date</h1>
+              <p class="footer-text">Subscribe to our newseller</p>
+              <div class="input-email">
+                <input class="" placeholder="Email" />
+                <i class="bi bi-arrow-right-short"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="footer-text pt-8">© Copyright Team Inc.</p>
+    </div>
+  </footer>
 
   <!-- SCRIPT -->
   <script src="https://code.jquery.com/jquery-3.7.0.min.js"
