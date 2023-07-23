@@ -36,30 +36,32 @@ $(document).ready(function () {
 
   // CAROUSEL
   $(".owl-carousel").owlCarousel({
-    loop: true,
+    rewind: true,
     margin: 10,
+    center: true,
     responsiveClass: true,
-    dots: true,
     autoplay: true,
     autoplayTimeout: 3000,
     autoplayHoverPause: true,
     nav: true,
+    dots: false,
+    center: true,
     navText: [
-      "<i class='bi bi-chevron-left'></i>",
-      "<i class='bi bi-chevron-right'></i>",
+      "<i class='bi bi-arrow-left'></i>",
+      "<i class='bi bi-arrow-right'></i>",
     ],
     responsive: {
       0: {
         items: 1,
-        nav: false,
       },
-      768: {
+      567: {
         items: 2,
-        nav: false,
       },
       992: {
         items: 3,
-        loop: true,
+      },
+      1400: {
+        items: 4,
       },
     },
   });
