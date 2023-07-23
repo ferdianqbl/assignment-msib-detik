@@ -17,13 +17,19 @@ $(document).ready(function () {
         "src",
         "images/logo.svg"
       );
+      $(".navbar.navbar-light .navbar-toggler-icon").removeClass(
+        "navbar-toggler-icon-dark"
+      );
     } else {
-      $(".navbar.navbar-light").css("background-color", "transparent");
+      $(".navbar.navbar-light").css("background-color", "#f5f5f5");
 
       $(".navbar.navbar-light .nav-link").addClass("nav-link-black");
       $(".navbar.navbar-light .navbar-brand img").attr(
         "src",
         "images/logo-dark.svg"
+      );
+      $(".navbar.navbar-light .navbar-toggler-icon").addClass(
+        "navbar-toggler-icon-dark"
       );
     }
   });

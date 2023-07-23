@@ -99,10 +99,6 @@ nav.navbar#navbar {
   padding-top: 1rem;
   padding-bottom: 1rem;
 
-  @media (max-width: 992px) {
-    background: $dark-blue;
-  }
-
   ul {
     li {
       a {
@@ -113,6 +109,10 @@ nav.navbar#navbar {
 
         &:hover {
           color: $light-blue;
+        }
+
+        &.active {
+          color: $light-blue !important;
         }
 
         &.nav-link-black {
@@ -161,6 +161,10 @@ nav.navbar#navbar {
     display: block;
     border-radius: 9999px;
     background-color: rgb(255, 255, 255);
+
+    &.navbar-toggler-icon-dark {
+      background-color: $dark-blue;
+    }
   }
 
   .navbar-toggler-icon:not(:last-child) {
@@ -198,6 +202,11 @@ nav.navbar#navbar {
   height: 100% !important;
   display: flex;
   flex-direction: column;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.02) translateY(-10px);
+  }
 
   @media (max-width: 767px) {
     width: 20rem;
