@@ -248,6 +248,14 @@ nav.navbar#navbar .navbar-toggler--nav.toggler-active > span:nth-child(3) {
   transition: all 0.3s ease-in-out;
   margin-bottom: 1.25rem;
 }
+@media (max-width: 768px) {
+  .review-card {
+    min-width: 260px;
+    max-width: 367px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 .review-card .star-group {
   display: flex;
   gap: 0.5rem;
