@@ -37,7 +37,6 @@ $(document).ready(function () {
   // CAROUSEL
   $(".owl-carousel").owlCarousel({
     rewind: true,
-    margin: 10,
     center: true,
     responsiveClass: true,
     autoplay: true,
